@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href="/new" )
+    button Add a Message
+  div
+    h2= "Messages"
+      ul
+        each message in messages
+          li
+            p= message.text
+            div(class="details")
+              p(class="writtenBy") Written by: &nbsp;
+              p(class="userName")= message.user
+              p(class="date")= message.added
+
