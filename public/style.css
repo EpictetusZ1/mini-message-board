@@ -62,6 +62,10 @@ button {
   border: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .msgForm {
   display: flex;
   flex-direction: column;
